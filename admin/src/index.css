@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1e40af;
+  --color-secondary: #06b6d4;
+  --color-accent: #f59e42;
+  --color-bg: #0a1123;
+  --color-card: #fff;
+  --color-sidebar: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  --color-sidebar-active: #f59e42;
+  --color-text: #f1f5f9;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.card, .main-content, .dashboard-section {
+  background: var(--color-card) !important;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px 0 rgba(30,64,175,0.10);
+}
+
+.sidebar, .admin-sidebar {
+  background: var(--color-sidebar) !important;
+  color: #fff;
+}
+
+.navbar, .admin-navbar {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%) !important;
+  color: #fff;
+}
+
+
+.active {
+  background: linear-gradient(90deg, #f59e42 0%, #fbbf24 100%);
+  color: #1e293b !important;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 24px 0 rgba(245,158,66,0.13);
+  outline: 2px solid #f59e42;
+}
+
+button, .btn, .primary-btn {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover, .btn:hover, .primary-btn:hover {
+  background: linear-gradient(90deg, #f59e42 0%, #fbbf24 100%);
+  color: #1e293b;
+  box-shadow: 0 2px 12px 0 rgba(245,158,66,0.18);
+}
+
